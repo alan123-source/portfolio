@@ -1,0 +1,12 @@
+.section{
+    padding:var(--space-xl) 0;
+    
+}
+
+.description{
+    max-width:800px;
+    color:var(--color-text-secondary);
+    line-height:1.8;
+    margin-bottom:var(--space-md);
+    font-size:1.05rem;
+}

@@ -1,0 +1,15 @@
+.header {
+  margin-bottom: var(--space-xl);
+}
+
+.title {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: var(--space-sm);
+}
+
+.description {
+  max-width: 700px;
+  color: var(--color-text-secondary);
+  line-height: 1.8;
+}

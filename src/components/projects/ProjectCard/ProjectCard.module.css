@@ -1,0 +1,40 @@
+.card{
+    display:block;
+    border:1px solid var(--color-border);
+    border-radius:var(--radius-lg);
+    padding:1.5rem;
+    transition:transform 0.3s ease,
+                box-shadow 0.3s ease;
+  
+}
+
+.card:hover{
+    transform:translateY(-4px)
+}
+
+.title{
+    font-size:0.75rem;
+   
+
+}
+
+.description{
+    color:var(--color-text-secondary);
+    line-height:1.7;
+    margin-bottom:var(--space-md);
+}
+
+.techStack{
+    display:flex;
+    flex-wrap:wrap;
+    gap:0.5rem;
+    margin-top:1rem;
+}
+
+.badge{
+   background:#f3f4f6;
+   padding:0.35rem 0.75rem;
+   border-radius:999px;
+   font-size:0.8rem;
+   font-weight:500;
+}
