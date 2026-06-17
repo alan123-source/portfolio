@@ -10,7 +10,9 @@ export default function FeaturedProjects(){
         <section className={styles.section}>
             <Container>
                 <SectionTitle>
-                    Featured Projects
+                    Featured 
+                     <br/>
+                    Projects
                 </SectionTitle>
 
                 <div className={styles.grid}>

@@ -12,6 +12,8 @@ export default function SkillsPreview(){
         <section className={styles.section}>
             <Container>
                 <SectionTitle>
+                    Technical
+                    <br/>
                     Skills
                 </SectionTitle>
 

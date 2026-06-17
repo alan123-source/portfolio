@@ -5,11 +5,13 @@ import {usePathname} from "next/navigation";
 import styles from "./Navbar.module.css";
 import navigation from "@/constants/navigation";
 import siteConfig from "@/constants/siteConfig";
+import {useState} from "react";
 
 
 export default function Navbar(){
     
     const pathname=usePathname();
+    const [isOpen,setIsOpen]=useState(false);
 
     return (
         <nav className={styles.navbar}>
@@ -19,13 +21,23 @@ export default function Navbar(){
                        {siteConfig.name}
                     </Link>
 
-                    <div className={styles.links}>
+                    <button 
+                      className={styles.menuButton}
+                      onClick={()=>setIsOpen(!isOpen)}
+                    >
+                        ☰
+                    </button>
+
+                    <div 
+                      className={`${styles.links} ${
+                        isOpen ? styles.open : ""
+                      }`}>
                         {
                            navigation.map((link)=>(
                             <Link
                               key={link.href}
                               href={link.href}
-                              className={`$styles.link} {
+                              className={`${styles.link} ${
                                 link.href==="/projects"
                                  ? pathname.startsWith("/projects")
                                    ?styles.active

@@ -10,41 +10,47 @@ export default function ContactPage(){
                           description="  Feel free to reach out for opportunities,
                                          collaborations, or project discussions."
               />
-            <section className={styles.section}>
-                <div className={styles.card}>
-                    <p className={styles.label}>Email</p>
-                    <p className={styles.value}>
-                    {siteConfig.email}
-                    </p>
-                </div>
-            </section>
+           <div className={styles.grid}>
+  <div className={styles.card}>
+    <p className={styles.label}>Email</p>
+    <p className={styles.value}>
+      {siteConfig.email}
+    </p>
+  </div>
 
-            <section className={styles.section}>
-                <div className={styles.card}>
-                    <p className={styles.label}>Location</p>
-                    <p className={styles.value}>
-                    {siteConfig.location}
-                    </p>
-                </div>
-            </section>
+  <div className={styles.card}>
+    <p className={styles.label}>Location</p>
+    <p className={styles.value}>
+      {siteConfig.location}
+    </p>
+  </div>
 
-            <section className={styles.section}>
-                <div className={styles.card}>
-                    <p className={styles.label}>GitHub</p>
-                    <p className={styles.value}>
-                    {siteConfig.github || "Coming Soon"}
-                    </p>
-                </div>
-            </section>
+  <div className={styles.card}>
+    <p className={styles.label}>GitHub</p>
 
-            <section className={styles.section}>
-                <div className={styles.card}>
-                    <p className={styles.label}>LinkedIn</p>
-                    <p className={styles.value}>
-                    {siteConfig.linkedin || "Coming Soon"}
-                    </p>
-                </div>
-            </section>
+    <a
+      href={siteConfig.github}
+      target="_blank"
+      rel="noopener noreferrer"
+      className={styles.link}
+    >
+      View GitHub Profile
+    </a>
+  </div>
+
+  <div className={styles.card}>
+    <p className={styles.label}>LinkedIn</p>
+
+    <a
+      href={siteConfig.linkedin}
+      target="_blank"
+      rel="noopener noreferrer"
+      className={styles.link}
+    >
+      View LinkedIn Profile
+    </a>
+  </div>
+</div>
               
         </PageLayout>
 

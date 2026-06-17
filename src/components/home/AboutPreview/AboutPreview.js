@@ -1,7 +1,7 @@
 import Container from "@/components/common/Container/Container";
 import SectionTitle from "@/components/common/SectionTitle/SectionTitle";
 import styles from "./AboutPreview.module.css";
-
+import Button from "@/components/common/Button/Button";
 export default function AboutPreview(){
 
     return (
@@ -12,18 +12,31 @@ export default function AboutPreview(){
                     About Me
                 </SectionTitle>
 
-                <p className={styles.description}>
-                    I am a Computer Science student passionate about
-                    full-stack web development, problem solving, and
-                    software engineering. I enjoy building practical
-                    applications and continuously improving my skills in
-                    modern web technologies.
-                </p>
-                <p className={styles.description}>
-                    Currently, I am focused on JavaScript, React,
-                    Next.js, Node.js, Data Structures & Algorithms,
-                    and building production-ready projects
-                </p>
+               <p className={styles.description}>
+                    I'm a Computer Engineering student and aspiring
+                    Full Stack Developer who enjoys building modern web
+                    applications and solving real-world problems through
+                    software engineering.
+
+                    Currently, I'm focused on Next.js, Node.js,
+                    Data Structures & Algorithms, and building
+                    production-ready projects while continuously
+                    improving my problem-solving skills.
+               </p>
+               <div className={styles.focus}>
+                 <span>Next.js</span>
+                 <span>Node.js</span>
+                 <span>DSA</span>
+                 <span>Backend Development</span>
+                 <span>React</span>
+                 
+               </div>
+               <Button
+                    href="/about"
+                    variant="secondary"
+                 >
+                    More About Me
+                 </Button>
 
             </Container>
         </section>

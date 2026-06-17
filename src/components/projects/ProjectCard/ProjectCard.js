@@ -4,7 +4,7 @@ import styles from "./ProjectCard.module.css";
 export default function ProjectCard({project}){
 
     return (
-        <article className={styles.card}>
+        
             <Link
                href={`/projects/${project.slug}`}
                className={styles.card}
@@ -16,7 +16,7 @@ export default function ProjectCard({project}){
                 <p className={styles.description}>
                     {project.description}
                 </p>
-            </Link>
+            
             <div className={styles.techStack}>
                 {
                     project.technologies.slice(0,4).map((technology)=>(
@@ -29,6 +29,7 @@ export default function ProjectCard({project}){
                     ))
                 }
             </div>
-        </article>
+        </Link>
+      
     )
 }

@@ -1,10 +1,11 @@
 import styles from "./Button.module.css";
 import Link from "next/link";
-export default function Button({children,href}){
+export default function Button({children,href,variant="primary",}){
 
     if(href){
 
         const isExternal=href.startsWith("http");
+        const buttonClass=`${styles.button} ${styles[variant]}`;
 
         if(isExternal){
             return(
@@ -12,7 +13,7 @@ export default function Button({children,href}){
                   href={href}
                   target="blank"
                   rel="noopener noreferrer"
-                  className={styles.button}
+                  className={buttonClass}
                 >
                     {children}
                 </a>
@@ -21,7 +22,7 @@ export default function Button({children,href}){
         return (
             <Link 
                href={href}
-               className={styles.button}
+               className={buttonClass}
             >
                {children}
             </Link>
@@ -29,7 +30,8 @@ export default function Button({children,href}){
     }
 
     return (
-        <button className={styles.button}>
+        <button 
+        className={buttonClass}>
             {children}
         </button>
     );
