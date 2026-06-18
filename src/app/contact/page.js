@@ -2,8 +2,8 @@ import PageLayout from "@/components/common/PageLayout/PageLayout";
 import PageHeader from "@/components/common/PageHeader/PageHeader";
 import siteConfig from "@/constants/siteConfig";
 import styles from "./contact.module.css";
+import Image from "next/image";
 
-import {Mail,MapPin,FolderGit,Link} from "lucide-react";
 
 
 export default function ContactPage(){
@@ -21,7 +21,13 @@ export default function ContactPage(){
   <div className={styles.card}>
     <a href={`mailto:${siteConfig.email}`}>
          <div className={styles.header}>
-          <Mail size={24}/>
+          <Image 
+             src="/icons/gmail.svg"
+             alt="Email"
+             width={24}
+             height={24}
+             className={styles.icon}
+          />
           <p className={styles.label}>Email</p>
      </div>
     </a>
@@ -35,7 +41,13 @@ export default function ContactPage(){
   <div className={styles.card}>
     <div className={styles.header}>
       
-        <MapPin size={24}/>
+         <Image 
+            src="/icons/location.svg"
+            alt="Location"
+            width={24}
+            height={24}
+            className={styles.icon}
+         />
           <p className={styles.label}>Location</p>
     </div>
     
@@ -46,7 +58,13 @@ export default function ContactPage(){
 
   <div className={styles.card}>
     <div className={styles.header}>
-        <FolderGit  size={24}/>
+        <Image 
+           src="/icons/github.svg"
+           alt="Github"
+           width={24}
+           height={24}
+           className={styles.icon}
+        />
         <p className={styles.label}>GitHub</p>
         
     </div>
@@ -64,7 +82,13 @@ export default function ContactPage(){
 
   <div className={styles.card}>
     <div className={styles.header}>
-      <Link size={24}/>
+      <Image 
+        src="/icons/linkedin.svg"
+        alt="Linkedin"
+        width={24}
+        height={24}
+        className={styles.icon}
+      />
       <p className={styles.label}>LinkedIn</p>
     </div>
     

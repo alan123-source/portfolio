@@ -1,6 +1,6 @@
 
 import styles from "./Footer.module.css";
-import {Mail,FolderGit,Link} from "lucide-react";
+import Image from "next/image";
 import siteConfig from "@/constants/siteConfig"; 
 export default function Footer(){
     return (
@@ -21,18 +21,40 @@ export default function Footer(){
                    target="_blank"
                    rel="noopener noreferrer"
                 >
-                    <FolderGit size={18}/>
+                   <Image 
+                      src="/icons/github.svg"
+                      alt="Github"
+                      width={18}
+                      height={18}
+                      className={styles.icon}
+                   />
                     GitHub
                 </a>
                 <a
                   href={siteConfig.linkedin}
                   target="_blank"
                   rel="noopener noreferrer"
-                >   <Link size={18}/>
+                >   
+                   <Image 
+                      src="/icons/linkedin.svg"
+                      alt="Linkedin"
+                      width={18}
+                      height={18}
+                      className={styles.icon}
+                   />
                     Linkedin
                 </a>
-                <a href={`mailto:${siteConfig.email}`}>
-                    <Mail size={18}/>
+                <a href={`mailto:${siteConfig.email}`}
+                   target="_blank"
+                   rel="noopener noreferrer"
+                >
+                    <Image 
+                      src="/icons/gmail.svg"
+                      alt="Email"
+                      width={18}
+                      height={18}
+                      className={styles.icon}
+                    />
                      Email
                 </a>
 

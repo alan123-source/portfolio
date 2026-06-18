@@ -92,3 +92,12 @@
   color:var(--color-text-primary);
   stroke-width:1.8;
 }
+
+.icon{
+  opacity:.8;
+  transition:.2 ease;
+}
+
+.card.hover .icon{
+  opacity:1;
+}

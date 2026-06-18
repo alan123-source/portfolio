@@ -34,9 +34,15 @@
     gap:2rem;
 
     margin-bottom:2rem;
+
+    flex-wrap:wrap;
 }
 
 .links a{
+
+    display:flex;
+    align-items:center;
+    gap:.6rem;
     color:var(--color-text-secondary);
 
     text-decoration:none;
@@ -44,7 +50,7 @@
     font-weight:500;
 
     transition:color .2s ease,
-               transform .3s ease;
+               transform .2s ease;
 }
 
 .links a:hover{
@@ -73,4 +79,14 @@
     color:var(--color-text-secondary);
 
     line-height:1.8;
+}
+
+.icon{
+    opacity:.8;
+    transition:.2s ease;
+
+}
+
+.link a:hover .icon{
+    opacity:1;
 }
