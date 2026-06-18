@@ -15,7 +15,7 @@ export default function ResumePage(){
 
          
             <h2 className={styles.cardTitle}>
-                Professioal Summary
+               👨‍💻  Professional Summary
             </h2>
             <p className={styles.text}>Computer Science student passionate about full-stack
                 web development,software engineering, and building 
@@ -29,7 +29,7 @@ export default function ResumePage(){
 
           
             <h2 className={styles.cardTitle}>
-                Education
+               🎓 Education
             </h2>
             <p className={styles.text}>
                 B.Tech in Computer Science and Engineering.
@@ -43,7 +43,7 @@ export default function ResumePage(){
           <div className={styles.card}>
 
          
-            <h2 className={styles.cardTitle}>Technical Skills</h2>
+            <h2 className={styles.cardTitle}> ⚙ Technical Skills</h2>
             <div className={styles.skills}>
                 <span className={styles.skill}>HTML&CSS</span>
                 <span className={styles.skill}>JavaScript</span>
@@ -62,7 +62,9 @@ export default function ResumePage(){
     
          </section>
 
-         <Button href="/resume/resume.pdf">
+         <Button href="/resume/resume.pdf"
+         
+         >
             Download Resume
          </Button>
                 

@@ -2,6 +2,7 @@ import Container from "@/components/common/Container/Container";
 import SectionTitle from "@/components/common/SectionTitle/SectionTitle";
 import styles from "./ContactPreview.module.css";
 import siteConfig from "@/constants/siteConfig";
+import Button from "@/components/common/Button/Button";
 
 
 export default function ContactPreview(){
@@ -10,20 +11,23 @@ export default function ContactPreview(){
         <section className={styles.section}>
             <Container>
                 <SectionTitle>
-                    Contact
+                    Let's Build
+                    <br/>
+                    Something Together
                 </SectionTitle>
                 <p className={styles.description}>
-                 Interested in working together or discussing a
-                 project? Feel free to reach out.
+                    I'm always open to internships,
+                    collaborations, and interesting
+                    opportunities. Feel free to reach out
+                    if you'd like to work together.
                 </p>
-                <div className={styles.contactInfo}>
-                    <p>
-                        Email:{siteConfig.email}
-                    </p>
-                    <p>
-                       Location:{siteConfig.location}
-                    </p>
-                </div>
+                <Button
+                   href="/contact"
+                   variant="primary"
+                >
+                    Get in Touch
+                </Button>
+               
             </Container>
         </section>
     )

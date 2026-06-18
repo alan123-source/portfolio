@@ -1,13 +1,15 @@
 .section{
-    padding:var(--space-xl) 0;
+    padding:8rem 0;
 
 }
 
 .description{
 
     color:var(--color-text-secondary);
-    margin-bottom:var(--space-md);
-    line-height:1.8;
+    margin-bottom:2rem;
+    line-height:1.9;
+    max-width:650px;
+    font-size:1.1rem;
 }
 
 .contactInfo{

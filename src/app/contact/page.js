@@ -2,7 +2,12 @@ import PageLayout from "@/components/common/PageLayout/PageLayout";
 import PageHeader from "@/components/common/PageHeader/PageHeader";
 import siteConfig from "@/constants/siteConfig";
 import styles from "./contact.module.css";
+
+import {Mail,MapPin,FolderGit,Link} from "lucide-react";
+
+
 export default function ContactPage(){
+ 
     return (
       
         <PageLayout>
@@ -11,22 +16,41 @@ export default function ContactPage(){
                                          collaborations, or project discussions."
               />
            <div className={styles.grid}>
+ 
+  
   <div className={styles.card}>
-    <p className={styles.label}>Email</p>
+    <a href={`mailto:${siteConfig.email}`}>
+         <div className={styles.header}>
+          <Mail size={24}/>
+          <p className={styles.label}>Email</p>
+     </div>
+    </a>
+    
+  
     <p className={styles.value}>
       {siteConfig.email}
     </p>
   </div>
 
   <div className={styles.card}>
-    <p className={styles.label}>Location</p>
+    <div className={styles.header}>
+      
+        <MapPin size={24}/>
+          <p className={styles.label}>Location</p>
+    </div>
+    
     <p className={styles.value}>
       {siteConfig.location}
     </p>
   </div>
 
   <div className={styles.card}>
-    <p className={styles.label}>GitHub</p>
+    <div className={styles.header}>
+        <FolderGit  size={24}/>
+        <p className={styles.label}>GitHub</p>
+        
+    </div>
+    
 
     <a
       href={siteConfig.github}
@@ -34,12 +58,16 @@ export default function ContactPage(){
       rel="noopener noreferrer"
       className={styles.link}
     >
-      View GitHub Profile
+      View GitHub Profile →
     </a>
   </div>
 
   <div className={styles.card}>
-    <p className={styles.label}>LinkedIn</p>
+    <div className={styles.header}>
+      <Link size={24}/>
+      <p className={styles.label}>LinkedIn</p>
+    </div>
+    
 
     <a
       href={siteConfig.linkedin}
@@ -47,10 +75,18 @@ export default function ContactPage(){
       rel="noopener noreferrer"
       className={styles.link}
     >
-      View LinkedIn Profile
+      View LinkedIn Profile →
     </a>
   </div>
 </div>
+  <section className={styles.cta}>
+    <h2 className={styles.ctaTitle}>
+      Open to Oppurtunites
+    </h2>
+    <p className={styles.ctaDescription}>
+      I,m always interested in internship,collaboration,open-source contributions,and exciting projects.
+    </p>
+  </section>
               
         </PageLayout>
 

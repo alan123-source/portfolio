@@ -3,7 +3,7 @@ const siteConfig={
 
     name:"Alan Paul John",
 
-    role:"Full Stack Developer",
+    role:"Software Engineer",
 
     email:"alanpauljohn385@gmail.com",
 

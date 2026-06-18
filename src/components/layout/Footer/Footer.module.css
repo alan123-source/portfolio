@@ -1,0 +1,76 @@
+.footer{
+    padding:6rem 0 3rem;
+
+    border-top:1px solid rgba(0,0,0,.06);
+
+    text-align:center;
+
+    margin-top:10rem;
+}
+
+.name{
+    font-size:1.5rem;
+
+    font-weight:700;
+
+    letter-spacing:-0.03em;
+
+    margin-bottom:.5rem;
+}
+
+.role{
+    color:var(--color-text-secondary);
+
+    margin-bottom:2rem;
+    
+    font-size:1.05rem;
+}
+
+.links{
+    display:flex;
+
+    justify-content:center;
+
+    gap:2rem;
+
+    margin-bottom:2rem;
+}
+
+.links a{
+    color:var(--color-text-secondary);
+
+    text-decoration:none;
+   
+    font-weight:500;
+
+    transition:color .2s ease,
+               transform .3s ease;
+}
+
+.links a:hover{
+    color:var(--color-text-primary);
+    transform:translateY(-2px);
+
+}
+
+.copy{
+    color:var(--color-text-secondary);
+
+    font-size:.9rem;
+}
+
+.built{
+    color:var(--color-text-secondary);
+    margin-bottom:1rem;
+}
+
+
+.motto{
+    max-width:600px;
+
+    margin:0 auto 3rem;
+
+    color:var(--color-text-secondary);
+
+    line-height:1.8;
+}

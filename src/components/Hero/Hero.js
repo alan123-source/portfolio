@@ -13,7 +13,7 @@ export default function Hero() {
                  <div className={styles.content}>
                     
                      <div className={styles.badge}>
-                        FULL STACK DEVELOPER
+                        SOFTWARE ENGINEER
                      </div>
 
                       <h1 className={styles.title}>
