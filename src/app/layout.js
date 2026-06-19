@@ -16,8 +16,55 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata = {
-  title:siteConfig.title,
-  description:siteConfig.description,
+  metadataBase: new URL("http://localhost:3000"),
+ title:{
+  default:"Alan Paul John | Software Engineer",
+  template:"%s | Alan Paul John",
+ },
+
+ description:"Computer Engineering student and aspiring Software Engineer passionate about full-stack development, software engineering, and building scalable applications.",
+
+ keywords:[
+  "Alan Paul John",
+  "Software Engineer",
+  "Full Stack Developer",
+  "Next.js",
+  "React",
+  "Node.js",
+  "MongoDB",
+  "JavaScript",
+  "Portfolio"
+ ],
+
+ authors:[
+  {
+    name:"Alan Paul John"
+  }
+ ],
+
+ creator:"Alan Paul John",
+
+ openGraph:{
+  title:"Alan Paul John |Software Engineer",
+  description:"Computer Engineering student passionate about building modern web applications.",
+  type:"website",
+  images:[
+    {
+      url:"/opengraph-image.png",
+      width:1200,
+      height:630,
+      alt:"Alan Paul john Portfolio"
+    },
+  ],
+ },
+
+ twitter:{
+  card:"summary_large_image",
+  title:"Alan Paul John | Software Engineer",
+  description:"Computer Engineering student passionate about building modern web applications.",
+  images:["/opengraph-image.png"],
+ },
+
 };
 
 export default function RootLayout({ children }) {

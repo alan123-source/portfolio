@@ -108,3 +108,41 @@
 
     border-top:1px solid rgba(0,0,0,.08);
 }
+
+body::before{
+    content:"";
+
+    position:fixed;
+
+    top:-150px;
+    right:-150px;
+
+    width:600px;
+    height:600px;
+
+    background:
+      radial-gradient(
+        rgba(59,130,246,.08),
+        transparent
+      );
+
+    filter:blur(80px);
+
+    z-index:-1;
+}
+
+.titleWrapper{
+    display:flex;
+
+    align-items:center;
+
+    gap:1rem;
+
+    margin-bottom:1.5rem;
+}
+
+.titleWrapper img{
+    flex-shrink:0;
+
+    opacity:.9;
+}

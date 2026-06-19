@@ -2,6 +2,7 @@ import PageLayout from "@/components/common/PageLayout/PageLayout";
 import PageHeader from "@/components/common/PageHeader/PageHeader";
 import Button from "@/components/common/Button/Button";
 import styles from "./resume.module.css";
+import Image from "next/image";
 export default function ResumePage(){
 
     return (
@@ -13,10 +14,19 @@ export default function ResumePage(){
          <section className={styles.section}>
          <div className={styles.card}>
 
-         
+         <div className={styles.titleWrapper}>
+
+            <Image 
+              src="/icons/profile.svg"
+              alt="Profile"
+              width={40}
+              height={40}
+            />
             <h2 className={styles.cardTitle}>
-               👨‍💻  Professional Summary
+               Professional Summary
             </h2>
+         </div>
+
             <p className={styles.text}>Computer Science student passionate about full-stack
                 web development,software engineering, and building 
                 real world applications using modern web technologies
@@ -27,10 +37,18 @@ export default function ResumePage(){
          <section className={styles.section}>
           <div className={styles.card}>
 
-          
+          <div className={styles.titleWrapper}>
+            <Image 
+              src="/icons/education.svg"
+              alt="eductaion"
+              width={40}
+              height={40}
+            />
             <h2 className={styles.cardTitle}>
-               🎓 Education
+               Education
             </h2>
+          </div>
+
             <p className={styles.text}>
                 B.Tech in Computer Science and Engineering.
             </p>
@@ -40,9 +58,18 @@ export default function ResumePage(){
 
   <section className={styles.section}>
         <div className={styles.card}>
+         <div className={styles.titleWrapper}>
+            <Image 
+              src="/icons/experience.svg"
+              alt="Experience"
+              width={40}
+              height={40}
+            />
           <h2 className={styles.cardTitle}>
             Experience
           </h2>
+         </div>
+
 
           <h3 className={styles.role}>
             Chair – FOSS Club CEP
@@ -104,8 +131,18 @@ export default function ResumePage(){
 
           <div className={styles.card}>
 
-         
-            <h2 className={styles.cardTitle}> ⚙ Technical Skills</h2>
+           <div className={styles.titleWrapper}>
+
+            <Image 
+              src="/icons/skills.svg"
+              alt="Skills"
+              width={40}
+              height={40}
+            />
+            <h2 className={styles.cardTitle}>Technical Skills</h2>
+
+           </div>
+
             <div className={styles.skills}>
                 <span className={styles.skill}>HTML&CSS</span>
                 <span className={styles.skill}>JavaScript</span>
