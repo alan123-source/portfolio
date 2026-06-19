@@ -38,6 +38,68 @@ export default function ResumePage(){
           </div>
          </section>
 
+  <section className={styles.section}>
+        <div className={styles.card}>
+          <h2 className={styles.cardTitle}>
+            Experience
+          </h2>
+
+          <h3 className={styles.role}>
+            Chair – FOSS Club CEP
+          </h3>
+
+          <p className={styles.duration}>
+            Mar 2026 – Present
+          </p>
+
+          <ul className={styles.points}>
+            <li>
+              Leading the FOSS Club community and promoting open-source culture.
+            </li>
+
+            <li>
+              Organizing technical events, workshops, and collaborative initiatives.
+            </li>
+
+            <li>
+              Coordinating activities and fostering project-based learning.
+            </li>
+
+            <li>
+              Developing leadership, communication, and teamwork skills.
+            </li>
+          </ul>
+
+          <hr className={styles.divider} />
+
+          <h3 className={styles.role}>
+            Vice Chair – FOSS Club CEP
+          </h3>
+
+          <p className={styles.duration}>
+            Mar 2025 – Mar 2026
+          </p>
+
+          <ul className={styles.points}>
+            <li>
+              Assisted in organizing technical events and workshops.
+            </li>
+
+            <li>
+              Promoted open-source culture and collaborative learning.
+            </li>
+
+            <li>
+              Worked closely with club members on community initiatives.
+            </li>
+
+            <li>
+              Strengthened teamwork and leadership skills.
+            </li>
+          </ul>
+        </div>
+      </section>    
+
          <section className={styles.section}>
 
           <div className={styles.card}>

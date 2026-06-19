@@ -73,3 +73,38 @@
     margin-top:var(--space-lg);
 }
 
+.role{
+    font-size:1.3rem;
+
+    font-weight:700;
+
+    letter-spacing:-0.03em;
+
+    margin-bottom:.5rem;
+}
+
+.duration{
+    color:var(--color-text-secondary);
+
+    margin-bottom:1.5rem;
+}
+
+.points{
+    padding-left:1.25rem;
+
+    color:var(--color-text-secondary);
+
+    line-height:1.9;
+}
+
+.points li{
+    margin-bottom:.75rem;
+}
+
+.divider{
+    margin:3rem 0;
+
+    border:none;
+
+    border-top:1px solid rgba(0,0,0,.08);
+}

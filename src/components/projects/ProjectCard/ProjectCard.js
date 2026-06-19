@@ -9,10 +9,15 @@ export default function ProjectCard({project}){
                href={`/projects/${project.slug}`}
                className={styles.card}
             >
-            
-                 <h3 className={styles.title}>
+             <div className={styles.header}>
+               <h3 className={styles.title}>
                     {project.title}
                 </h3>
+                <span className={styles.arrow}>
+                    ↗
+                </span>
+             </div>
+                
                 <p className={styles.description}>
                     {project.description}
                 </p>

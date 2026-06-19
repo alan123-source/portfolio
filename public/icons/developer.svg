@@ -1,0 +1,18 @@
+<svg width="200" height="200" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Laptop Screen -->
+  <rect x="40" y="40" width="120" height="80" rx="8" fill="#1E293B"></rect>
+  <rect x="48" y="48" width="104" height="64" rx="4" fill="#0F172A"></rect>
+
+  <!-- Code Symbol -->
+  <path d="M82 65L68 80L82 95" stroke="#38BDF8" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"></path>
+  <path d="M118 65L132 80L118 95" stroke="#38BDF8" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"></path>
+  <path d="M106 60L94 100" stroke="#FACC15" stroke-width="4" stroke-linecap="round"></path>
+
+  <!-- Laptop Base -->
+  <path d="M25 125H175L165 140H35L25 125Z" fill="#475569"></path>
+
+  <!-- Small Decorative Dots -->
+  <circle cx="60" cy="30" r="4" fill="#22C55E"></circle>
+  <circle cx="75" cy="30" r="4" fill="#F59E0B"></circle>
+  <circle cx="90" cy="30" r="4" fill="#EF4444"></circle>
+</svg>

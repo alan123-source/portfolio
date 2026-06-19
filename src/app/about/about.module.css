@@ -76,3 +76,58 @@
     line-height:1.8;
     max-width:700px;
 }
+
+.card{
+    padding:2rem;
+
+    border:1px solid rgba(0,0,0,.05);
+
+    border-radius:32px;
+
+    background:linear-gradient(
+        180deg,
+        #ffffff,
+        #fafafa
+    );
+
+    transition:.3s ease;
+}
+
+.card:hover{
+    transform:translateY(-6px);
+
+    box-shadow:0 25px 70px rgba(0,0,0,.08);
+}
+
+.grid{
+    display:grid;
+
+    grid-template-columns:
+        repeat(auto-fit,minmax(280px,1fr));
+
+    gap:1.5rem;
+
+}
+
+.icons{
+    display:flex;
+
+    align-items:center;
+
+    gap:1rem;
+
+    margin-bottom:1.5rem;
+}
+
+.card h3{
+    font-size:1.25rem;
+    font-weight:700;
+    margin-bottom:.75rem;
+    letter-spacing:-0.03em;
+
+}
+
+.card p{
+    color:var(--color-text-secondary);
+    line-height:1.8;
+}

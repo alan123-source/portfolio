@@ -1,0 +1,6 @@
+<svg width="64" height="64" viewBox="0 0 128 128" xmlns="http://www.w3.org/2000/svg">
+  <polygon points="64,8 112,36 112,92 64,120 16,92 16,36" fill="#68A063"></polygon>
+  <text x="64" y="74" text-anchor="middle" font-family="Arial" font-size="30" font-weight="bold" fill="white">
+    JS
+  </text>
+</svg>

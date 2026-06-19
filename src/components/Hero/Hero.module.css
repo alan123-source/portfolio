@@ -2,7 +2,7 @@
   min-height:calc(100vh-80px);
   display:flex;
   align-items:center;
-  margin-top:10px;
+ padding:4rem 0;
 }
 
 .wrapper {
@@ -23,15 +23,17 @@
 .image {
   border-radius: 32px;
   object-fit: cover;
-  box-shadow: 0 30px 60px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 25px 70px rgba(0, 0, 0, 0.08);
+  border:1px solid rgba(0,0,0,0.06);
 }
 
 .title {
   font-size: clamp(3.5rem, 8vw, 6rem);
-  line-height: 1;
+  line-height: .95;
   font-weight: 800;
   margin-bottom: 1.5rem;
   color: var(--color-text-primary);
+  letter-spacing:-0.06em;
 }
 
 .subtitle {
@@ -41,11 +43,11 @@
 }
 
 .description {
-  font-size: 1.25rem;
+  font-size: 1.2rem;
   color: var(--color-text-secondary);
   max-width: 650px;
-  line-height: 1.7;
-  margin-bottom: var(--space-md);
+  line-height: 1.9;
+  margin-bottom:2rem;
 }
 
 .actions {
@@ -54,14 +56,16 @@
 }
 
 .badge{
-  display:inline-block;
-  padding:0.5rem 1rem;
+  display:inline-flex;
+  align-items:center;
+  gap:.5rem;
+  padding:0.6rem 1rem;
   border-radius:999px;
-  background:#f3f4f6;
+  background:#f8f8f8;
   font-size:0.85rem;
   font-weight:600;
-  margin-bottom:1.5rem;
-  letter-spacing:0.05em;
+  margin-bottom:2rem;
+  letter-spacing:0.12em;
 }
 
 .techStack {
@@ -72,13 +76,18 @@
 }
 
 .techStack span {
-  background: #f3f4f6;
-  padding: 0.5rem 1rem;
+  background: #f8f8f8;
+  padding: 0.7rem 1rem;
   border-radius: 999px;
   font-size: 0.9rem;
   font-weight: 500;
+  border:1px solid rgba(0,0,0,0.05);
+  transition:.2s ease;
 }
 
+.techStack span:hover{
+  transform:translateY(-2px);
+}
 
 @media (max-width: 768px) {
   .wrapper {
@@ -102,5 +111,9 @@
   .image {
     width: 280px;
     height: auto;
+  }
+
+  .techStack{
+    justify-content:center;
   }
 }

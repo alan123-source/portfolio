@@ -1,6 +1,6 @@
 import PageLayout from "@/components/common/PageLayout/PageLayout";
 import PageHeader from "@/components/common/PageHeader/PageHeader";
-import Button from "@/components/common/Button/Button";
+import Image from "next/image";
 import styles from "./about.module.css";
 
 export default function AboutPage() {
@@ -26,138 +26,199 @@ export default function AboutPage() {
         </p>
       </section>
 
-      {/* Journey */}
-
       <section className={styles.section}>
         <h2 className={styles.heading}>My Journey</h2>
-
         <p className={styles.description}>
-          During my early college days, I was always excited to learn new
-          things but struggled with where and how to learn. Like many
-          beginners, I got trapped in the tutorial loop.
-        </p>
+        My interest in technology started with curiosity and a desire to learn new things. Like many beginners, I initially found myself stuck in tutorial loops, unsure of what to learn and how to apply it.
 
-        <p className={styles.description}>
-          A turning point came when I attended a TinkerHub meetup in Pampady.
-          When a speaker asked how many people had built projects, only a few
-          hands were raised. That moment made me realize the importance of
-          building projects.
-        </p>
+        A turning point came when I attended a TinkerHub meetup in my hometown, Pampady. Seeing people showcase their projects made me realize the importance of learning by building. That day, I started my first project, a Sorting Algorithm Visualizer built with HTML, CSS, and JavaScript. Although simple, it helped me overcome my fear of failure and gave me the confidence to keep building.
 
-        <p className={styles.description}>
-          I came home and started my first project — a Sorting Algorithm
-          Visualizer using HTML, CSS and JavaScript. That project helped me
-          overcome my fear of failure and introduced me to project-based
-          learning.
-        </p>
+        As my interest in JavaScript grew, I moved into backend development with Node.js and Express.js. Through project-based learning, I explored REST APIs, MongoDB, authentication, middleware, and eventually built a full-stack E-Commerce platform.
 
-        <p className={styles.description}>
-          Since I enjoyed JavaScript, I explored backend development using
-          Node.js and Express. Through building projects, I learned REST APIs,
-          MongoDB Atlas, middleware, authentication and eventually completed a
-          full-stack E-Commerce project. Later, I learned React and began
-          exploring Next.js through this portfolio.
+        Today, I continue to learn through projects while improving my problem-solving skills with Data Structures and Algorithms and exploring modern technologies like React and Next.js.
         </p>
       </section>
 
-      {/* Current Work */}
-
-      <section className={styles.section}>
-        <h2 className={styles.heading}>Currently Working On</h2>
-
-        <p className={styles.description}>
-          I'm currently focused on project-based learning and improving my
-          problem-solving skills through Data Structures and Algorithms.
-          Initially, I followed the NeetCode roadmap, but later shifted to
-          pattern-based learning. So far I've covered Arrays, Two Pointers,
-          Sliding Window and Hash Maps, and I'm continuing to learn more.
-        </p>
-      </section>
-
-      {/* Education */}
-
-      <section className={styles.section}>
-        <h2 className={styles.heading}>Education</h2>
-
-        <ul className={styles.list}>
-          <li>Crossroads Central School, Pampady</li>
-          <li>College of Engineering Poonjar</li>
-        </ul>
-      </section>
-
-      <section className={styles.section}>
-    <h2 className={styles.heading}>Timeline</h2>
+  <section className={styles.section}>
+    <h2 className={styles.heading}>Journey Timeline</h2>
 
     <div className={styles.timeline}>
-        <div>
+        <div className={styles.card}>
             <h3>2023</h3>
-            <p>Started B.Tech in Computer Engineering.</p>
+            <p>Started learning programming and explored different technologies.</p>
         </div>
 
-        <div>
+        <div className={styles.card}>
             <h3>2024</h3>
-            <p>
-                Attended TinkerHub meetup, built my first project,
-                Sorting Algorithm Visualizer and started learning
-                through projects.
-            </p>
+            <p>Built my first project, a Sorting Algorithm Visualizer.</p>
         </div>
 
-        <div>
+        <div className={styles.card}>
             <h3>2025</h3>
-            <p>
-                Learned Node.js and Express, built a Full Stack
-                E-Commerce project, started DSA and became
-                Vice Chair of FOSS Club CEP.
-            </p>
+            <p>Learned Node.js, Express.js and MongoDB through project-based learning.</p>
         </div>
 
-        <div>
+        <div className={styles.card}>
             <h3>2026</h3>
-            <p>
-                Learning Next.js, building this portfolio and
-                preparing for internships.
-            </p>
+            <p>Built a full-stack E-Commerce platform and started learning React and Next.js.</p>
         </div>
 
-        <div>
-            <h3>Future</h3>
-            <p>
-                Becoming a strong Software Engineer and
-                building impactful software.
-            </p>
+        <div className={styles.card}>
+            <h3>Present</h3>
+            <p>Improving DSA skills and building modern web applications.</p>
         </div>
     </div>
 </section>
 
-      {/* Tech Stack */}
+  <section className={styles.section}>
+    <h2 className={styles.heading}>Education</h2>
+  <div className={styles.grid}>
 
-      <section className={styles.section}>
-        <h2 className={styles.heading}>Current Tech Stack</h2>
 
-        <div className={styles.techStack}>
-          <span>MERN Stack</span>
-          <span>Next.js</span>
-          <span>Python</span>
-          <span>MongoDB</span>
-          <span>React</span>
-          <span>Node.js</span>
-        </div>
-      </section>
+    <div className={styles.card}>
+        <h3>B.Tech Computer Science and Engineering</h3>
 
-      {/* Interests */}
+        <p className={styles.description}>
+            College of Engineering Poonjar
+            <br />
+            2023 – 2027
+        </p>
+    </div>
 
-      <section className={styles.section}>
-        <h2 className={styles.heading}>Interests Beyond Coding</h2>
+    <div className={styles.card}>
+        <h3>Higher Secondary Education</h3>
 
-        <div className={styles.techStack}>
-          <span>Cricket 🏏</span>
-          <span>Football ⚽</span>
-          <span>Continuous Learning 📚</span>
-        </div>
-      </section>
-
+        <p>
+            Crossroads Central School, Pampady
+        </p>
+    </div>
+  </div>
+</section>
      
+     <section className={styles.section}>
+    <h2 className={styles.heading}>Quick Facts</h2>
+
+    <div className={styles.grid}>
+        <div className={styles.card}>
+          <Image 
+            src="/icons/location.svg"
+            alt="Location"
+            width={30}
+            height={30}
+            className={styles.icon}
+          />
+          <h3>Kerala,India</h3>
+          <p>Based in Kerala</p>
+
+        </div>
+
+        <div className={styles.card}>
+
+          <Image 
+            src="/icons/developer.svg"
+            alt="Developer"
+            width={30}
+            height={30}
+            className={styles.icon}
+          />
+          <h3>Software Engineer</h3>
+          <p>Building scalable applications.</p>
+
+        </div>
+
+        <div className={styles.card}> 
+          <div className={styles.icon}>
+
+            <Image 
+               src="/icons/mongoDB.svg"
+               alt="mongoDB"
+               width={32}
+               height={32}
+            />
+
+              <Image 
+               src="/icons/express.svg"
+               alt="Express"
+               width={32}
+               height={32}
+            />
+
+              <Image 
+               src="/icons/react.svg"
+               alt="React"
+               width={32}
+               height={32}
+            />
+
+              <Image 
+               src="/icons/node.svg"
+               alt="Node"
+               width={32}
+               height={32}
+            />
+
+            <Image 
+              src="/icons/mern&next.svg"
+              alt="Next"
+              width={30}
+              height={30}
+              
+            />
+          </div>
+
+          <h3>MERN + Next.js</h3>
+          <p>Building modern web applications</p>
+          
+          </div>
+
+        <div className={styles.card}>
+          <Image 
+            src="/icons/python.svg"
+            alt="Python"
+            width={30}
+            height={30}
+            className={styles.icon}
+          />
+          <h3>Python for DSA</h3>
+          <p>Problem Solving and algorithms</p>
+        </div>
+
+        <div className={styles.card}>
+          <Image 
+             src="/icons/projectbased.svg"
+             alt="ProjectBased"
+             width={30}
+             height={30}
+             className={styles.icon}
+
+          />
+         <h3>Project-Based Learner</h3> 
+         <p>Learning through building real projects</p>
+        </div>
+
+        <div className={styles.card}>
+          <Image 
+            src="/icons/cricket.svg"
+            alt="interst"
+            width={30}
+            height={30}
+            className={styles.icon}
+          />
+          <h3>Cricket & Football</h3>
+          <p>Interest Beyond coding</p>
+          </div>
+    </div>
+</section>
+
+   <section className={styles.section}>
+   <h2 className={styles.heading}>Learning Philosophy</h2>
+
+    <p className={styles.description}>
+        I strongly believe that the best way to learn technology is by building projects. Every concept I learn is reinforced through practical implementation, helping me understand not only how things work, but why they work.
+
+        This project-based approach has shaped my learning journey and continues to drive my growth as a developer.
+    </p>
+</section>
 
     </PageLayout>
   );

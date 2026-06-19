@@ -1,0 +1,18 @@
+<svg width="200" height="200" viewBox="0 0 256 255" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="python-blue" x1="50%" y1="0%" x2="50%" y2="100%">
+      <stop offset="0%" stop-color="#387EB8"></stop>
+      <stop offset="100%" stop-color="#366994"></stop>
+    </linearGradient>
+    <linearGradient id="python-yellow" x1="50%" y1="0%" x2="50%" y2="100%">
+      <stop offset="0%" stop-color="#FFE052"></stop>
+      <stop offset="100%" stop-color="#FFC331"></stop>
+    </linearGradient>
+  </defs>
+
+  <!-- Top snake -->
+  <path fill="url(#python-blue)" d="M127.8 0C62.7 0 66.8 28.2 66.8 28.2l.1 29.2h62v8.8H42.3S0 61.5 0 127.4c0 65.9 36.9 63.5 36.9 63.5h22v-31.1s-1.2-36.9 36.3-36.9h62.6s35.2.6 35.2-34.1V32.9S198.4 0 127.8 0ZM93.6 20.2a11.3 11.3 0 1 1 0 22.6 11.3 11.3 0 0 1 0-22.6Z"></path>
+
+  <!-- Bottom snake -->
+  <path fill="url(#python-yellow)" d="M128.2 255c65.1 0 61-28.2 61-28.2l-.1-29.2h-62v-8.8h86.6s42.3 4.7 42.3-61.2c0-65.9-36.9-63.5-36.9-63.5h-22v31.1s1.2 36.9-36.3 36.9H98.2S63 132.5 63 167.2v55.9S57.6 255 128.2 255Zm34.2-20.2a11.3 11.3 0 1 1 0-22.6 11.3 11.3 0 0 1 0 22.6Z"></path>
+</svg>
