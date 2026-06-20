@@ -16,7 +16,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata = {
-  metadataBase: new URL("http://localhost:3000"),
+  metadataBase: new URL("https://portfolio-inky-chi-pjby3xxcy9.vercel.app/"),
  title:{
   default:"Alan Paul John | Software Engineer",
   template:"%s | Alan Paul John",
