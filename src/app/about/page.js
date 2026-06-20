@@ -173,7 +173,7 @@ export default function AboutPage() {
 
         <div className={styles.card}>
           <Image 
-            src="/icons/python.svg"
+            src="/icons/Python.svg"
             alt="Python"
             width={30}
             height={30}
