@@ -1,19 +1,16 @@
 @import "../styles/variables.css";
 :root {
+  color-scheme:light;
   --background: #ffffff;
   --foreground: #171717;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
+
 
 html {
   height: 100%;
   scroll-behavior:smooth;
+  color-scheme:light;
 }
 
 html,
@@ -45,8 +42,3 @@ a {
 }
 
 
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
-}
